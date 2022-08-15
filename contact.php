@@ -10,7 +10,7 @@ include_once "include/header.php";
                 <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
                 <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item active"><a href="contact.php" class="nav-link">Контакти</a></li>
             </ul>
         </div>

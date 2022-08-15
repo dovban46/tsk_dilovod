@@ -10,7 +10,7 @@ include_once "include/header.php";
                 <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
                 <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
             </ul>
         </div>
@@ -34,16 +34,19 @@ include_once "include/header.php";
             <?php foreach ($news as $new):?>
             <div class="col-md-6 col-lg-4 ftco-animate">
                 <div class="blog-entry">
-                    <a href="post-news.php?news_id=<?=$new['id']?>" class="block-20 d-flex align-items-end" style='background-image: "<img src="<?=$new['img']?>""'>
-                        <div class="meta-date text-center p-2">
-                            <span class="day">26</span>
-                            <span class="mos">June</span>
-                            <span class="yr">2019</span>
+                    <a href="post-news.php?news_id=<?=$new['id']?>">
+                        <div class="img-wrap d-flex align-items-stretch">
+                            <div class="img align-self-stretch block-20 d-flex align-items-end">
+                                <img src="<?=$new['img']?>"  alt="...">
+                            </div>
                         </div>
                     </a>
                     <div class="text bg-white p-4">
                         <h3 class="heading"><?=$new['title']?></h3>
                         <p><?= mb_substr($new['content'], 0,150, 'UTF-8') . '...'?></p>
+                        <div class="meta">
+                            <div><a href="#"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
+                        </div>
                         <div class="d-flex align-items-center mt-4">
                             <p class="mb-0"><a href="post-news.php?news_id=<?=$new['id']?>" class="btn btn-primary">Більше <span class="ion-ios-arrow-round-forward"></span></a></p>
                         </div>

@@ -17,10 +17,12 @@ if (isset($_FILES["image"]) && $_FILES["image"]["tmp_name"] !="") {
     $fileName = "../images/no-image.png";
 }
 
-$sql = "INSERT INTO teachers (name, position, img_teacher, content_teacher)
-           VALUES (:name, :position, :img_teacher, :content_teacher)";
+$sql = "INSERT INTO teachers (LastName, FirstName, PoBatkovi, position, img_teacher, content_teacher)
+           VALUES (:LastName, :FirstName, :PoBatkovi, :position, :img_teacher, :content_teacher)";
 $stmt = $db->prepare($sql);
-$stmt->bindValue(":name", $_POST["name"]);
+$stmt->bindValue(":LastName", $_POST["LastName"]);
+$stmt->bindValue(":FirstName", $_POST["FirstName"]);
+$stmt->bindValue(":PoBatkovi", $_POST["PoBatkovi"]);
 $stmt->bindValue(":position", $_POST["position"]);
 $stmt->bindValue(":img_teacher", $fileName);
 $stmt->bindValue(":content_teacher", $_POST["content_teacher"]);

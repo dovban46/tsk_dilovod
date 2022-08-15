@@ -47,7 +47,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
         </button>
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item"><a href="../index.php" class="nav-link pl-0">Головна</a></li>
+                <li class="nav-item"><a href="logout.php" class="nav-link pl-0">Головна</a></li>
                 <li class="nav-item"><a href="../history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="../teacher.php" class="nav-link">Викладачі</a></li>
                 <li class="nav-item"><a href="../news.php" class="nav-link">Новини</a></li>

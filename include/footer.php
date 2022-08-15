@@ -15,14 +15,19 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2">Посилання</h2>
+                    <h2 class="ftco-heading-2">Мапа сайту</h2>
                     <ul class="list-unstyled">
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Home</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>About</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Services</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Deparments</a></li>
-                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Contact</a></li>
-                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Admin</a></li>
+                        <li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Головна</a></li>
+                        <li><a href="history.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Історія</a></li>
+                        <li><a href="teacher.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Викладачі</a></li>
+                        <li><a href="news.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Новини</a></li>
+                        <li><a href="nav-plan.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Навчальний план</a></li>
+                        <li><a href="kursovi.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Курсові роботи</a></li>
+                        <li><a href="educational.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Виховні</a></li>
+                        <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Випускники</a></li>
+                        <li><a href="galery.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Галерея</a></li>
+                        <li><a href="contact.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Контакти</a></li>
+                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Адмін-панель</a></li>
                     </ul>
                 </div>
             </div>

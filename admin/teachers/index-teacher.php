@@ -4,7 +4,7 @@ $login = 'admin';
 $password = '12345';
 
 if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
-    header('location: ../login/index.php');
+    header('location: ../../login/index.php');
 }
 include "../../database/conf.php";
 include "../../database/function.php";
@@ -45,7 +45,7 @@ include "../../database/function.php";
                     <tbody>
                     <tr>
                         <th scope="row"><?=$teacher['id_teacher'];?></th>
-                        <td><?=$teacher['name'];?></td>
+                        <td><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></td>
                         <td><a href="edit-teacher.php?teacher_id=<?=$teacher['id_teacher']?>" class="btn btn-info">Редагувати</a></td>
                         <td><a href="delete-teacher.php?teacher_id=<?=$teacher['id_teacher']?>" class="btn btn-danger">Видалити</a></td>
                     </tr>

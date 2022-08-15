@@ -1,7 +1,6 @@
 <?php
 include_once "include/header.php";
 ?>
-
                 <li class="nav-item active"><a href="index.php" class="nav-link pl-0">Головна</a></li>
                 <li class="nav-item"><a href="history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="teacher.php" class="nav-link">Викладачі</a></li>
@@ -144,23 +143,6 @@ include_once "include/header.php";
 				</div>
 			</div>
 		</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 include_once "include/footer.php";
 ?>

@@ -36,8 +36,12 @@ include "../../database/function.php";
             <form action="update-teacher.php" method="post" enctype="multipart/form-data">
                 <input type="text" name="id_teacher" value="<?=$teacher['id_teacher']?>">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Введіть ПІБ викладача</label>
-                    <input type="text" name="name" value="<?=$teacher['name']?>" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Введіть прізвище викладача</label>
+                    <input type="text" name="LastName" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Введіть ім'я викладача</label>
+                    <input type="text" name="FirstName" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Введіть по батькові викладача</label>
+                    <input type="text" name="PoBatkovi" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Введіть посаду викладача</label>
@@ -52,6 +56,7 @@ include "../../database/function.php";
                     <input type="file" name="img_teacher" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Обновити запис</button>
+                <a href="index-teacher.php" class="btn btn-primary">Скасувати</a>
             </form>
         </div>
     </div>

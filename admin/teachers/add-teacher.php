@@ -26,8 +26,14 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
         <div class="col">
             <form action="check-teacher.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="exampleFormControlInput1">Введіть ПІБ викладача</label>
-                    <input type="text" name="name" class="form-control" id="exampleFormControlInput1">
+                    <label for="exampleFormControlInput1">Введіть прізвище викладача</label>
+                    <input type="text" name="LastName" class="form-control" id="exampleFormControlInput1">
+
+                    <label for="exampleFormControlInput1">Введіть ім'я викладача</label>
+                    <input type="text" name="FirstName" class="form-control" id="exampleFormControlInput1">
+
+                    <label for="exampleFormControlInput1">Введіть по батькові викладача</label>
+                    <input type="text" name="PoBatkovi" class="form-control" id="exampleFormControlInput1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Введіть посаду</label>
@@ -42,6 +48,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                     <textarea class="form-control" name="content_teacher" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <button class="btn btn-primary" type="submit">Додати запис</button>
+                <a href="index-teacher.php" class="btn btn-primary">Скасувати</a>
             </form>
         </div>
     </div>

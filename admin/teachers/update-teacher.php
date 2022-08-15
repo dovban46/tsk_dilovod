@@ -10,10 +10,10 @@ $db = new PDO('mysql:host=localhost; dbname=tsk_dilovod;', 'root', '');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 if (isset($_FILES["image"]) && $_FILES["image"]["tmp_name"] !="") {
-    move_uploaded_file($_FILES["image"]["tmp_name"], "../images/" . $_FILES["image"]["name"]);
-    $fileName = "../images/" . $_FILES["image"]["name"];
+    move_uploaded_file($_FILES["image"]["tmp_name"], "../../images/" . $_FILES["image"]["name"]);
+    $fileName = "../../images/" . $_FILES["image"]["name"];
 } else {
-    $fileName = "../images/no-image.png";
+    $fileName = "../../images/no-image.png";
 }
 
 $sql = "UPDATE teachers SET 

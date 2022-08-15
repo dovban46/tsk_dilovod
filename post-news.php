@@ -15,7 +15,7 @@ $new = get_news_by_id($news_id);
                 <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
                 <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
 
             </ul>
@@ -34,6 +34,7 @@ $new = get_news_by_id($news_id);
     </div>
 </section>
 
+
 <section class="ftco-section">
     <div class="container">
         <div class="row">
@@ -45,32 +46,32 @@ $new = get_news_by_id($news_id);
                 <p class="card-text"><?=$new['content'];?></p>
                 <a href="news.php" class="btn btn-primary">&larr; Повернутися назад</a>
             </div>
-
-
-
             <div class="col-lg-4 sidebar ftco-animate">
                 <div class="sidebar-box ftco-animate">
                     <h3>Останні новини</h3>
                     <?php $news = get_news();?>
                     <?php foreach ($news as $new):?>
-                    <div class="block-21 mb-4 d-flex">
-                        <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
-                        <div class="text">
-                            <h3 class="heading"><a href="post-news.php?news_id=<?=$new['id']?>"><?=$new['title']?></a></h3>
-                            <div class="meta">
-                                <div><a href="#"><span class="icon-calendar"></span> June 27, 2019</a></div>
+                        <div class="block-21 mb-4 d-flex">
+                            <img class="blog-img mr-4" src="<?=$new['img'];?>" alt="...">
+                            <div class="text">
+                                <h3 class="heading"><a href="post-news.php?news_id=<?=$new['id']?>"><?=$new['title']?></a></h3>
+                                <div class="meta">
+                                    <div><a href="#"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <?php endforeach; ?>
                 </div>
             </div>
-
-
-
         </div>
     </div>
 </section>
+
+
+
+
+
+
 
 <?php
 include_once "include/footer.php";

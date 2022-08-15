@@ -29,32 +29,60 @@ include_once "include/header.php";
 </section>
 
 
-<section class="ftco-gallery">
-    <div class="container-wrap">
-        <div class="row no-gutters">
-            <div class="col-md-3 ftco-animate">
-                <a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/course-1.jpg);">
+<section class="ftco-section bg-light"">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image1.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image1.PNG);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-instagram"></span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_2.jpg);">
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image2.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image2.PNG);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-instagram"></span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_3.jpg);">
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image3.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image3.PNG);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-instagram"></span>
                     </div>
                 </a>
             </div>
-            <div class="col-md-3 ftco-animate">
-                <a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image_4.jpg);">
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image4.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image4.PNG);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image5.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image5.PNG);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image6.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image6.PNG);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image7.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image7.PNG);">
+                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                        <span class="icon-instagram"></span>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 ftco-animate mb-4">
+                <a href="images/image8.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image8.PNG);">
                     <div class="icon mb-4 d-flex align-items-center justify-content-center">
                         <span class="icon-instagram"></span>
                     </div>

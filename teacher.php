@@ -10,7 +10,7 @@ include_once "include/header.php";
                 <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
                 <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Галерея</a></li>
+                <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
             </ul>
         </div>
@@ -36,11 +36,13 @@ include_once "include/header.php";
             <?php foreach ($teachers as $teacher):?>
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
+                    <div class="img-wrap d-flex align-items-stretch">
                         <div class="img align-self-stretch">
-                            <img src="<?=$teacher['img_teacher']?>"  alt="...">
+                                <img src="<?=$teacher['img_teacher']?>"  alt="...">
                         </div>
+                    </div>
                     <div class="text pt-3 text-center">
-                        <h3><?=$teacher['name']?></h3>
+                        <h3><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></h3>
                         <div class="faded">
                             <p><?=$teacher['position']?></p>
                             <ul class="ftco-social text-center">
