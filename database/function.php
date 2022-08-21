@@ -11,7 +11,7 @@ function get_news() {
     return $news;
 }
 
-//викладачів
+//викладачі
 function get_teachers() {
     global $conn;
     $sql = "SELECT * FROM teachers";
@@ -19,6 +19,16 @@ function get_teachers() {
 
     $teachers = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $teachers;
+}
+
+//галерея
+function get_galerys() {
+    global $conn;
+    $sql = "SELECT * FROM galery";
+    $result = mysqli_query($conn, $sql);
+
+    $galery = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $galery;
 }
 
 //пергляд новин
@@ -41,26 +51,7 @@ function get_teacher_by_id ($teacher_id) {
     return $teacher;
 }
 
-//автори
-function get_news_by_avtor ($avtor_name) {
-    global $conn;
 
-    $avtor_name = mysqli_real_escape_string($conn, $avtor_name);
-    $sql = "SELECT * FROM news WHERE avtor = " .$avtor_name;
-    $result = mysqli_query($conn, $sql);
-    $news = mysqli_fetch_all($result, MYSQLI_ASSOC);
-    return $news;
-}
-
-//вивід автора
-function get_avtor ($avtor_name) {
-    global $conn;
-    $avtor_name = mysqli_real_escape_string($conn, $avtor_name);
-    $sql= "SELECT * FROM teachers WHERE id_teacher = " . $avtor_name;
-    $result = mysqli_query($conn, $sql);
-    $avtor = mysqli_fetch_assoc ($result);
-    return $avtor;
-}
 
 //видалення новини
 function delete_new($news_id) {
@@ -77,5 +68,14 @@ function delete_teacher($teacher_id) {
     $teacher_id = mysqli_real_escape_string($conn, $teacher_id);
 
     $sql = "DELETE FROM teachers WHERE id_teacher = " .$teacher_id;
+    $result = mysqli_query($conn, $sql);
+}
+
+//видалення галереї
+function delete_galery($galery_id) {
+    global $conn;
+    $galery_id = mysqli_real_escape_string($conn, $galery_id);
+
+    $sql = "DELETE FROM galery WHERE id_galery = " .$galery_id;
     $result = mysqli_query($conn, $sql);
 }

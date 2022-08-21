@@ -11,9 +11,14 @@ $new = get_news_by_id($news_id);
                 <li class="nav-item"><a href="history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="teacher.php" class="nav-link">Викладачі</a></li>
                 <li class="nav-item active"><a href="news.php" class="nav-link">Новини</a></li>
-                <li class="nav-item"><a href="nav-plan.php" class="nav-link">Навчальний план</a></li>
-                <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
-                <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
+                <div class="dropdown collapse navbar-collapse navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Навчальна діяльність <i class="ion-ios-arrow-down"></i></a></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="nav-item dropdown-item" href="nav-plan.php" class="nav-link">Навчальний план</a></li>
+                        <li><a class="nav-item dropdown-item" href="kursovi.php" class="nav-link">Курсові роботи</a></li>
+                        <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
+                    </ul>
+                </div>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
                 <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
@@ -41,7 +46,7 @@ $new = get_news_by_id($news_id);
             <div class="col-lg-8 ftco-animate">
                 <h2 class="mb-3"><?=$new['title']?></h2>
                 <p>
-                    <img src="<?=$new['img'];?>" class="card-img-top" alt="...">
+                    <img src="<?=$new['img'];?>" class="img-fluid" alt="...">
                 </p>
                 <p class="card-text"><?=$new['content'];?></p>
                 <a href="news.php" class="btn btn-primary">&larr; Повернутися назад</a>
@@ -52,11 +57,13 @@ $new = get_news_by_id($news_id);
                     <?php $news = get_news();?>
                     <?php foreach ($news as $new):?>
                         <div class="block-21 mb-4 d-flex">
-                            <img class="blog-img mr-4" src="<?=$new['img'];?>" alt="...">
+                            <a href="post-news.php?news_id=<?=$new['id']?>">
+                                <img class="blog-img mr-4" src="<?=$new['img'];?>" alt="...">
+                            </a>
                             <div class="text">
                                 <h3 class="heading"><a href="post-news.php?news_id=<?=$new['id']?>"><?=$new['title']?></a></h3>
                                 <div class="meta">
-                                    <div><a href="#"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
+                                    <div><a href="post-news.php?news_id=<?=$new['id']?>"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
                                 </div>
                             </div>
                         </div>

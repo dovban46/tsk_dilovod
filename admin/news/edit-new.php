@@ -43,15 +43,13 @@ include "../../database/function.php";
                     <label for="exampleFormControlTextarea1">Введіть текст новини</label>
                     <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"><?=$new['content']?></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlFile1">Додати зображення для новини</label>
-                    <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
-                </div>
+
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Вкажіть дату публікації</label>
                     <input type="date" name="date" class="form-control-file" id="exampleFormControlFile1" value="<?=$new['date']?>">
                 </div>
                 <button class="btn btn-primary" type="submit">Обновити запис</button>
+                <a href="index-new.php" class="btn btn-primary">Скасувати</a>
             </form>
         </div>
     </div>

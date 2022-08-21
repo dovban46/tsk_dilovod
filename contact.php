@@ -6,9 +6,14 @@ include_once "include/header.php";
                 <li class="nav-item"><a href="history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="teacher.php" class="nav-link">Викладачі</a></li>
                 <li class="nav-item"><a href="news.php" class="nav-link">Новини</a></li>
-                <li class="nav-item"><a href="nav-plan.php" class="nav-link">Навчальний план</a></li>
-                <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
-                <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
+                <div class="dropdown collapse navbar-collapse navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Навчальна діяльність <i class="ion-ios-arrow-down"></i></a></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="nav-item dropdown-item" href="nav-plan.php" class="nav-link">Навчальний план</a></li>
+                        <li><a class="nav-item dropdown-item" href="kursovi.php" class="nav-link">Курсові роботи</a></li>
+                        <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
+                    </ul>
+                </div>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
                 <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item active"><a href="contact.php" class="nav-link">Контакти</a></li>
@@ -52,12 +57,23 @@ include_once "include/header.php";
             </div>
             <div class="col-md-3 d-flex">
                 <div class="bg-light align-self-stretch box p-4 text-center">
-                    <h3 class="mb-4">Вебсайт</h3>
-                    <p><a href="#">yoursite.com</a></p>
+                    <h3 class="mb-4">Вебсайт коледжу</h3>
+                    <p><a href="https://www.guscollege.com">guscollege.com</a></p>
                 </div>
             </div>
+
         </div>
     </div>
+</section>
+
+     <div class="container">
+         <div class="row d-flex contact-info">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.8507190617333!2d26.
+         201777800000002!3d49.0704722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63972f
+         a53e7b3cc!2zNDnCsDA0JzEzLjciTiAyNsKwMTInMDYuNCJF!5e0!3m2!1suk!2sua!4v1661099073220!5m2!1suk!2sua"
+         width="1200" height="500" ></iframe>
+         </div>
+     </div>
 
 <?php
 include_once "include/footer.php";

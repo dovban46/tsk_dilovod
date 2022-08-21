@@ -8,9 +8,9 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
 }
 include_once "../../database/conf.php";
 include "../../database/function.php";
-$teacher_id = $_GET['teacher_id'];
-if (!is_numeric($teacher_id))
+$galery_id = $_GET['galery_id'];
+if (!is_numeric($galery_id))
     header('location: ../404.php');
 
-$teacher = delete_galery($teacher_id);
-header('location: index-teacher.php');
+$galery = delete_galery($galery_id);
+header('location: index-galery.php');

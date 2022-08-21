@@ -6,9 +6,14 @@ include_once "include/header.php";
                 <li class="nav-item"><a href="history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="teacher.php" class="nav-link">Викладачі</a></li>
                 <li class="nav-item"><a href="news.php" class="nav-link">Новини</a></li>
-                <li class="nav-item"><a href="nav-plan.php" class="nav-link">Навчальний план</a></li>
-                <li class="nav-item"><a href="kursovi.php" class="nav-link">Курсові роботи</a></li>
-                <li class="nav-item"><a href="educational.php" class="nav-link">Виховні</a></li>
+                <div class="dropdown collapse navbar-collapse navbar-nav mr-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Навчальна діяльність <i class="ion-ios-arrow-down"></i></a></li>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="nav-item dropdown-item" href="nav-plan.php" class="nav-link">Навчальний план</a></li>
+                        <li><a class="nav-item dropdown-item" href="kursovi.php" class="nav-link">Курсові роботи</a></li>
+                        <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
+                    </ul>
+                </div>
                 <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
                 <li class="nav-item active"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
@@ -32,62 +37,18 @@ include_once "include/header.php";
 <section class="ftco-section bg-light"">
     <div class="container">
         <div class="row">
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image1.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image1.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image2.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image2.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image3.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image3.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image4.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image4.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image5.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image5.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image6.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image6.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image7.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image7.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-3 ftco-animate mb-4">
-                <a href="images/image8.PNG" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/image8.PNG);">
-                    <div class="icon mb-4 d-flex align-items-center justify-content-center">
-                        <span class="icon-instagram"></span>
-                    </div>
-                </a>
-            </div>
+
+            <?php $galerys = get_galerys();?>
+            <?php foreach ($galerys as $galery):?>
+                <div class="col-md-3 ftco-animate mb-4">
+                    <a href="<?=$galery['img_galery']?>" class="gallery image-popup img d-flex align-items-center" style="background-image: url(<?=$galery['img_galery']?>);">
+                        <div class="icon mb-4 d-flex align-items-center justify-content-center">
+                            <span class="icon-instagram"></span>
+                        </div>
+                    </a>
+                </div>
+            <?php endforeach; ?>
+
         </div>
     </div>
 </section>

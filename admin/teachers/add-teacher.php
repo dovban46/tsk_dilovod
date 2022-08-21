@@ -41,7 +41,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Додати зображення викладача</label>
-                    <input type="file" name="img_teacher" class="form-control-file" id="exampleFormControlFile1">
+                    <input type="file" name="image" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Введіть інформацію про викладача</label>

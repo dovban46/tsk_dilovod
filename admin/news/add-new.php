@@ -42,6 +42,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                     <input type="date" name="date" class="form-control-file" id="exampleFormControlFile1">
                 </div>
                 <button class="btn btn-primary" type="submit">Додати запис</button>
+                <a href="index-new.php" class="btn btn-primary">Скасувати</a>
             </form>
         </div>
     </div>
