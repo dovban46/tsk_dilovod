@@ -34,14 +34,14 @@ include "database/function.php";
                         <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
                         <div class="text">
                             <span>Email</span>
-                            <span>youremail@email.com</span>
+                            <span>guscollegetntu@ukr.net</span>
                         </div>
                     </div>
                     <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                         <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
                         <div class="text">
                             <span>Телефон</span>
-                            <span>+ 1235 2355 98</span>
+                            <span>(03557) 22039</span>
                         </div>
                     </div>
                 </div>

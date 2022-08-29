@@ -1,18 +1,19 @@
 <footer class="ftco-footer ftco-bg-dark ftco-section">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-3">
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5">
                     <h2 class="ftco-heading-2">Наші контакти</h2>
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Тернопільська область, Гусятин, вулиця Шевченка</span></li>
-                            <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@yourdomain.com</span></a></li>
+                            <li><a href="tel://	(03557) 22039"><span class="icon icon-phone"></span><span class="text">(03557) 22039</span></a></li>
+                            <li><a href="mailto:guscollegetntu@ukr.net"><span class="icon icon-envelope"></span><span class="text">guscollegetntu@ukr.net</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5 ml-md-4">
                     <h2 class="ftco-heading-2">Мапа сайту</h2>
@@ -23,6 +24,13 @@
                         <li><a href="news.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Новини</a></li>
                         <li><a href="nav-plan.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Навчальний план</a></li>
                         <li><a href="kursovi.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Курсові роботи</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="ftco-footer-widget mb-5 ml-md-4">
+                    <h2 class="ftco-heading-2">Мапа сайту</h2>
+                    <ul class="list-unstyled">
                         <li><a href="educational.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Виховні</a></li>
                         <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Випускники</a></li>
                         <li><a href="galery.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Галерея</a></li>
@@ -31,21 +39,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="ftco-footer-widget mb-5">
-                    <h2 class="ftco-heading-2 mb-0">Ми в соцмережах</h2>
-                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                        <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                        <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
+
+
         <div class="row">
             <div class="col-md-12 text-center">
                 <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Циклова комісія діловодства ГфК ТНТУ імені Івана Пулюя<br>Розробка Довбань.В
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Циклова комісія діловодства ГфК ТНТУ імені Івана Пулюя<br>Розробка Довбань В.
                 </p>
             </div>
         </div>

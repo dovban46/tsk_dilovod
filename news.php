@@ -50,7 +50,10 @@ include_once "include/header.php";
                         <h3 class="heading"><?=$new['title']?></h3>
                         <p><?= mb_substr($new['content'], 0,150, 'UTF-8') . '...'?></p>
                         <div class="meta">
-                            <div><a href="#"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
+                            <div><span class="icon-calendar"></span> <?=$new['date'];?></div>
+                        </div>
+                        <div class="meta">
+                            <div><span>Автор:</span> <?=$new['LastName'];?> <?=$new['FirstName'];?></div>
                         </div>
                         <div class="d-flex align-items-center mt-4">
                             <p class="mb-0"><a href="post-news.php?news_id=<?=$new['id']?>" class="btn btn-primary">Більше <span class="ion-ios-arrow-round-forward"></span></a></p>

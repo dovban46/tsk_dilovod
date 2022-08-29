@@ -12,5 +12,5 @@ $teacher_id = $_GET['teacher_id'];
 if (!is_numeric($teacher_id))
     header('location: ../404.php');
 
-$teacher = delete_galery($teacher_id);
+$teacher = delete_teacher($teacher_id);
 header('location: index-teacher.php');

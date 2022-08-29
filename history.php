@@ -36,7 +36,7 @@ include_once "include/header.php";
 
 
 <section class="ftco-section bg-light"">
-    <div class="container">
+    <div class="container" align="justify">
         <h2 class="mb-3">Циклова комісія діловодства</h2>
         <p>
             Циклова комісія діловодства організована у 2003 році у зв’язку із ліцензуванням спеціальності

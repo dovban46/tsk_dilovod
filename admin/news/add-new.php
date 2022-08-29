@@ -6,6 +6,8 @@ $password = '12345';
 if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     header('location: ../login/index.php');
 }
+
+include "../../database/function.php";
 ?>
 <!doctype html>
 <html lang="uk">
@@ -31,7 +33,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Введіть текст новини</label>
-                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="4"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Додати зображення для новини</label>
@@ -40,6 +42,15 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Вкажіть дату публікації</label>
                     <input type="date" name="date" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlFile1">Вкажіть автора</label><br>
+                        <select name="avtor">
+                            <?php $teachers = get_teachers();?>
+                            <?php foreach ($teachers as $teacher):?>
+                                <option value="<?=$teacher['id_teacher']?>"><?=$teacher['LastName']?> <?=$teacher['FirstName']?></option>
+                            <?php endforeach; ?>
+                        </select>
                 </div>
                 <button class="btn btn-primary" type="submit">Додати запис</button>
                 <a href="index-new.php" class="btn btn-primary">Скасувати</a>

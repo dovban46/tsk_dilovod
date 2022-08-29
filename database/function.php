@@ -4,7 +4,7 @@ include "conf.php";
 //новини
 function get_news() {
     global $conn;
-    $sql = "SELECT * FROM news";
+    $sql = "SELECT * FROM teachers INNER JOIN news ON teachers.id_teacher = news.avtor";
     $result = mysqli_query($conn, $sql);
 
     $news = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -34,7 +34,7 @@ function get_galerys() {
 //пергляд новин
 function get_news_by_id ($news_id) {
     global $conn;
-    $sql = "SELECT * FROM news WHERE id = ".$news_id;
+    $sql = "SELECT * FROM news WHERE id  = ".$news_id;
     $result = mysqli_query($conn, $sql);
 
     $new = mysqli_fetch_assoc($result);
@@ -79,3 +79,15 @@ function delete_galery($galery_id) {
     $sql = "DELETE FROM galery WHERE id_galery = " .$galery_id;
     $result = mysqli_query($conn, $sql);
 }
+
+
+//останні новини
+function get_last_news() {
+    global $conn;
+    $sql = "SELECT * FROM teachers INNER JOIN news ON teachers.id_teacher = news.avtor ORDER BY `id` DESC LIMIT 4";
+    $result = mysqli_query($conn, $sql);
+
+    $news = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $news;
+}
+

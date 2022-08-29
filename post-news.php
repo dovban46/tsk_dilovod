@@ -7,6 +7,8 @@ if (!is_numeric($news_id))
 
 $new = get_news_by_id($news_id);
 ?>
+
+
                 <li class="nav-item"><a href="index.php" class="nav-link pl-0">Головна</a></li>
                 <li class="nav-item"><a href="history.php" class="nav-link">Історія</a></li>
                 <li class="nav-item"><a href="teacher.php" class="nav-link">Викладачі</a></li>
@@ -43,18 +45,22 @@ $new = get_news_by_id($news_id);
 <section class="ftco-section">
     <div class="container">
         <div class="row">
+
+
             <div class="col-lg-8 ftco-animate">
                 <h2 class="mb-3"><?=$new['title']?></h2>
                 <p>
                     <img src="<?=$new['img'];?>" class="img-fluid" alt="...">
                 </p>
-                <p class="card-text"><?=$new['content'];?></p>
+                <p class="card-text" align="justify"><?=$new['content'];?></p>
                 <a href="news.php" class="btn btn-primary">&larr; Повернутися назад</a>
+
+
             </div>
             <div class="col-lg-4 sidebar ftco-animate">
                 <div class="sidebar-box ftco-animate">
                     <h3>Останні новини</h3>
-                    <?php $news = get_news();?>
+                    <?php $news = get_last_news();?>
                     <?php foreach ($news as $new):?>
                         <div class="block-21 mb-4 d-flex">
                             <a href="post-news.php?news_id=<?=$new['id']?>">
@@ -62,6 +68,9 @@ $new = get_news_by_id($news_id);
                             </a>
                             <div class="text">
                                 <h3 class="heading"><a href="post-news.php?news_id=<?=$new['id']?>"><?=$new['title']?></a></h3>
+                                <div class="meta">
+                                    <div><a href="post-news.php?news_id=<?=$new['id']?>"><span>Автор:</span> <?=$new['LastName'];?> <?=$new['FirstName'];?></a></div>
+                                </div>
                                 <div class="meta">
                                     <div><a href="post-news.php?news_id=<?=$new['id']?>"><span class="icon-calendar"></span> <?=$new['date'];?></a></div>
                                 </div>

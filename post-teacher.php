@@ -48,7 +48,7 @@ $teacher = get_teacher_by_id($teacher_id);
                 </p>
                 <h2 class="mb-3"><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></h2>
                 <p class="card-text"><?=$teacher['position'];?></p>
-                <p class="card-text"><?=$teacher['content_teacher'];?></p>
+                <p class="card-text" align="justify"><?=$teacher['content_teacher'];?></p>
                 <a href="teacher.php" class="btn btn-primary">&larr; Повернутися назад</a>
             </div>
 

@@ -34,7 +34,7 @@ include "../../database/function.php";
             $new = get_news_by_id($news_id);
             ?>
             <form action="update-new.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="id" value="<?=$new['id']?>">
+                <input type="text" name="id" readonly ="readonly " value="<?=$new['id']?>">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Введіть назву новини</label>
                     <input type="text" name="title" value="<?=$new['title']?>" class="form-control" id="exampleFormControlInput1">

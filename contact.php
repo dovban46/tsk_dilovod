@@ -46,13 +46,13 @@ include_once "include/header.php";
             <div class="col-md-3 d-flex">
                 <div class="bg-light align-self-stretch box p-4 text-center">
                     <h3 class="mb-4">Телефонний номер</h3>
-                    <p><a href="tel://1234567920">+ 1235 2355 98</a></p>
+                    <p><a href="tel://	(03557) 22039">	(03557) 22039</a></p>
                 </div>
             </div>
             <div class="col-md-3 d-flex">
                 <div class="bg-light align-self-stretch box p-4 text-center">
                     <h3 class="mb-4">Email пошта</h3>
-                    <p><a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    <p><a href="mailto:guscollegetntu@ukr.net">guscollegetntu@ukr.net</a></p>
                 </div>
             </div>
             <div class="col-md-3 d-flex">
