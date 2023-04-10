@@ -1,14 +1,9 @@
 <?php
 include "../../database/conf.php";
 session_start();
-$login = 'admin';
-$password = '12345';
+include "../../database/function.php";
 
-if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
-    header('location: ../login/index.php');
-}
-$db = new PDO('mysql:host=localhost; dbname=tsk_dilovod;', 'root', '');
-$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+include "../conect-db.php";
 
 if (isset($_FILES["image"]) && $_FILES["image"]["tmp_name"] !="") {
     move_uploaded_file($_FILES["image"]["tmp_name"], "../../images/" . $_FILES["image"]["name"]);

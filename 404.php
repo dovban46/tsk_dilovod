@@ -13,7 +13,7 @@ require "include/header.php";
                         <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
                     </ul>
                 </div>
-                <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
+                <li class="nav-item"><a href="post-student.php?grupa_id=1" class="nav-link">Випускники</a></li>
                 <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
 

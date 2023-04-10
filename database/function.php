@@ -4,7 +4,7 @@ include "conf.php";
 //новини
 function get_news() {
     global $conn;
-    $sql = "SELECT * FROM teachers INNER JOIN news ON teachers.id_teacher = news.avtor";
+    $sql = "SELECT * FROM teachers INNER JOIN news ON teachers.id_teacher = news.avtor ORDER BY `id` DESC";
     $result = mysqli_query($conn, $sql);
 
     $news = mysqli_fetch_all($result, MYSQLI_ASSOC);
@@ -19,6 +19,16 @@ function get_teachers() {
 
     $teachers = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $teachers;
+}
+
+//користувачі
+function get_users() {
+    global $conn;
+    $sql = "SELECT * FROM users";
+    $result = mysqli_query($conn, $sql);
+
+    $user = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $user;
 }
 
 //галерея
@@ -50,8 +60,6 @@ function get_teacher_by_id ($teacher_id) {
     $teacher = mysqli_fetch_assoc($result);
     return $teacher;
 }
-
-
 
 //видалення новини
 function delete_new($news_id) {
@@ -90,4 +98,39 @@ function get_last_news() {
     $news = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $news;
 }
+
+//випускники за групою
+function get_student_by_grupa ($students_id) {
+    global $conn;
+
+    $students_id = mysqli_real_escape_string($conn, $students_id);
+    $sql = "SELECT * FROM students WHERE grupa = " .$students_id. " ORDER BY `LastName` ";
+    $result = mysqli_query($conn, $sql);
+    $students = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $students;
+}
+
+//назва групи
+function get_grupa_name ($grupa_id) {
+    global $conn;
+    $grupa_id = mysqli_real_escape_string($conn, $grupa_id);
+    $sql= "SELECT * FROM grupa WHERE id_grupa = " . $grupa_id;
+    $result = mysqli_query($conn, $sql);
+    $grupa = mysqli_fetch_assoc ($result);
+    return $grupa;
+}
+
+//пергляд груп
+function get_grupa() {
+    global $conn;
+    $sql = "SELECT * FROM grupa ORDER BY `year` DESC ";
+    $result = mysqli_query($conn, $sql);
+
+    $grup = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $grup;
+}
+
+
+
+
 

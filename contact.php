@@ -14,7 +14,7 @@ include_once "include/header.php";
                         <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
                     </ul>
                 </div>
-                <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
+                <li class="nav-item"><a href="post-student.php?grupa_id=1" class="nav-link">Випускники</a></li>
                 <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item active"><a href="contact.php" class="nav-link">Контакти</a></li>
             </ul>
@@ -22,7 +22,7 @@ include_once "include/header.php";
     </div>
 </nav>
 
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.png');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -66,7 +66,7 @@ include_once "include/header.php";
     </div>
 </section>
 
-     <div class="container">
+     <div class="container mb-5">
          <div class="row d-flex contact-info">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2613.8507190617333!2d26.
          201777800000002!3d49.0704722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x63972f

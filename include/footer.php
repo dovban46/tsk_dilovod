@@ -7,16 +7,17 @@
                     <div class="block-23 mb-3">
                         <ul>
                             <li><span class="icon icon-map-marker"></span><span class="text">Тернопільська область, Гусятин, вулиця Шевченка</span></li>
-                            <li><a href="tel://	(03557) 22039"><span class="icon icon-phone"></span><span class="text">(03557) 22039</span></a></li>
+                            <li><a href="tel://	(03557) 22039" ><span class="icon icon-phone"></span><span class="text">(03557) 22039</span></a></li>
                             <li><a href="mailto:guscollegetntu@ukr.net"><span class="icon icon-envelope"></span><span class="text">guscollegetntu@ukr.net</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
 
+
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2">Мапа сайту</h2>
+                    <h2 class="ftco-heading-2 ">Мапа сайту</h2>
                     <ul class="list-unstyled">
                         <li><a href="index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Головна</a></li>
                         <li><a href="history.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Історія</a></li>
@@ -29,13 +30,13 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="ftco-footer-widget mb-5 ml-md-4">
-                    <h2 class="ftco-heading-2">Мапа сайту</h2>
+                    <h2 class="ftco-heading-2 ">Мапа сайту</h2>
                     <ul class="list-unstyled">
                         <li><a href="educational.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Виховні</a></li>
                         <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Випускники</a></li>
                         <li><a href="galery.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Галерея</a></li>
                         <li><a href="contact.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Контакти</a></li>
-                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Адмін-панель</a></li>
+                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Адмін панель</a></li>
                     </ul>
                 </div>
             </div>

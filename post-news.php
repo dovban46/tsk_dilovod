@@ -21,7 +21,7 @@ $new = get_news_by_id($news_id);
                         <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
                     </ul>
                 </div>
-                <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
+                <li class="nav-item"><a href="post-student.php?grupa_id=1" class="nav-link">Випускники</a></li>
                 <li class="nav-item"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
 
@@ -29,7 +29,7 @@ $new = get_news_by_id($news_id);
         </div>
     </div>
 </nav>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.png');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -41,21 +41,16 @@ $new = get_news_by_id($news_id);
     </div>
 </section>
 
-
 <section class="ftco-section">
     <div class="container">
         <div class="row">
-
-
             <div class="col-lg-8 ftco-animate">
                 <h2 class="mb-3"><?=$new['title']?></h2>
                 <p>
                     <img src="<?=$new['img'];?>" class="img-fluid" alt="...">
                 </p>
-                <p class="card-text" align="justify"><?=$new['content'];?></p>
+                <p class="card-text" ><?=$new['content'];?></p>
                 <a href="news.php" class="btn btn-primary">&larr; Повернутися назад</a>
-
-
             </div>
             <div class="col-lg-4 sidebar ftco-animate">
                 <div class="sidebar-box ftco-animate">

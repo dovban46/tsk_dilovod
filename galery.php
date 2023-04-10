@@ -14,14 +14,14 @@ include_once "include/header.php";
                         <li><a class="nav-item dropdown-item" href="educational.php" class="nav-link">Виховні</a></li>
                     </ul>
                 </div>
-                <li class="nav-item"><a href="#" class="nav-link">Випускники</a></li>
+                <li class="nav-item"><a href="post-student.php?grupa_id=1" class="nav-link">Випускники</a></li>
                 <li class="nav-item active"><a href="galery.php" class="nav-link">Галерея</a></li>
                 <li class="nav-item"><a href="contact.php" class="nav-link">Контакти</a></li>
             </ul>
         </div>
     </div>
 </nav>
-<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.jpg');">
+<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg1.png');">
     <div class="overlay"></div>
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">

@@ -21,8 +21,8 @@ include "database/function.php";
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
-<div class="bg-top navbar-light">
+<body >
+<div class="bg-top navbar-light ">
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
             <div class="col-md-4 d-flex align-items-center py-4">
