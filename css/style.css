@@ -8999,7 +8999,6 @@ h1, h2, h3, h4, h5,
         display: none; } }
 
 .form-control {
-  height: 52px !important;
   background: #fff !important;
   color: #000000 !important;
   font-size: 18px;
@@ -9010,8 +9009,6 @@ h1, h2, h3, h4, h5,
   .form-control:focus, .form-control:active {
     border-color: #000000; }
 
-textarea.form-control {
-  height: inherit !important; }
 
 .ftco-animate {
   opacity: 0;

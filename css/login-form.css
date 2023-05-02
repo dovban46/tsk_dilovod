@@ -10,7 +10,7 @@ body {
 }
 
 html {
-    background: linear-gradient(to right bottom, #fbdb89, #f48982);
+    background: linear-gradient(to right bottom, #fbdb89, #FD5F00);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -65,7 +65,7 @@ body {
 }
 
 .btn--form {
-    background-color: #f48982;
+    background-color: #FD5F00;
     color: #fdf2e9;
     align-self: end;
     padding: 8px;
@@ -87,8 +87,9 @@ body {
     transition: all 0.3s;
 }
 
-button {
+button, a{
     outline: 1px solid #f48982;
+    text-align: center;
 }
 
 .btn--form:hover {

@@ -7,7 +7,6 @@ if (!is_numeric($years))
 
 $year = get_grupa_name($years);
 
-
 ?>
 <link rel="stylesheet" href="css/list.css">
 
@@ -47,12 +46,13 @@ $year = get_grupa_name($years);
         <div class="row">
             <?php $grupa = get_grupa();?>
             <?php foreach ($grupa as $grup):?>
-            <div class="col-md-2 col-lg-1 ">
-                <div class="mb-5 ml-md-4 ">
-                    <p class="mb-0"><a href="post-student.php?grupa_id=<?=$grup['id_grupa'];?>" class="btn btn-primary"><?=$grup['year'];?></span></a></p>
+                <div class="d-flex justify-content-center text-center">
+                    <div class="px-3 mb-3">
+                    <p><a href="post-student.php?grupa_id=<?=$grup['id_grupa'];?>" class="btn btn-primary with-btn"><?=$grup['year'];?></span></a></p>
                 </div>
             </div>
             <?php endforeach; ?>
+
             <?php
             $students_id = $_GET['grupa_id'];
             $students = get_student_by_grupa ($students_id);
@@ -63,7 +63,7 @@ $year = get_grupa_name($years);
                 <div class="row justify-content-center mb-5 pb-2">
                     <div class="col-md-8 text-center heading-section ftco-animate">
                         <?php
-                        $sql = "SELECT t.LastName AS teachers_LastName
+                        $sql = "SELECT t.LastName AS teachers_LastName, t.FirstName AS teachers_FirstName, t.PoBatkovi AS teachers_PoBatkovi
                         FROM teachers t
                         JOIN grupa g ON t.id_teacher = g.curator
                         WHERE g.id_grupa = $grupa_id";
@@ -72,7 +72,7 @@ $year = get_grupa_name($years);
                         if (mysqli_num_rows($result) > 0) {
                         while ($row = mysqli_fetch_assoc($result)) {
                         ?>
-                            <h3><span>Куратор: <?=$row["teachers_LastName"]?> </span></h3>
+                            <h3><span>Куратор: <?=$row["teachers_LastName"]?> <?=$row["teachers_FirstName"]?> <?=$row["teachers_PoBatkovi"]?></span></h3>
                             <?php
                             }
                         }

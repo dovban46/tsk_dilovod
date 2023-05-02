@@ -1,36 +1,26 @@
-<!doctype html>
-<html lang="uk">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Вхід в адмін-панель</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="../css/login-form.css">
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <div class="main-form">
-                <form class="login" action="check-login.php" method="post">
-                    <h2>Вхід</h2>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Введіть ваш логін</label>
-                        <input type="text" class="form-control" name="login" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Введіть ваш пароль</label>
-                        <input type="password" class="form-control" name="password" id="exampleInputPassword1" size="50">
-                    </div>
-                    <button type="submit" class="btn btn-primary">Увійти</button>
-                    <a class="btn btn-primary" href="../index.php" role="button">Скасувати</a>
-                </form>
-            </div>
+    <h2 class="login-title">Авторизація</h2>
+    <form class="login-form" action="check-login.php" method="post">
+        <div>
+            <label for="email">Логін </label>
+            <input id="exampleInputEmail1" type="text" placeholder="логін" name="login" required/>
         </div>
-    </div>
+        <div>
+            <label for="password">Пароль </label>
+            <input id="exampleInputPassword1" type="password" placeholder="пароль" name="password" required/>
+        </div>
+        <button class="btn btn--form" type="submit" value="Log in">Увійти</button>
+        <a class="btn btn--form" href="../index.php" role="button">Скасувати</a>
+    </form>
 </div>
 </body>
 </html>

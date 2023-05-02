@@ -36,7 +36,7 @@
                         <li><a href="#"><span class="ion-ios-arrow-round-forward mr-2"></span>Випускники</a></li>
                         <li><a href="galery.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Галерея</a></li>
                         <li><a href="contact.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Контакти</a></li>
-                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Адмін панель</a></li>
+                        <li><a href="login/index.php"><span class="ion-ios-arrow-round-forward mr-2"></span>Адмін-панель</a></li>
                     </ul>
                 </div>
             </div>

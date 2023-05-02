@@ -42,8 +42,8 @@ include_once "include/header.php";
             <div class="col-md-6 col-lg-3 ftco-animate">
                 <div class="staff">
                     <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch block-20 d-flex ">
-                                <img src="<?=$teacher['img_teacher']?>"  alt="...">
+                        <div class="mx-auto align-self-stretch block-20 d-flex ">
+                            <img src="<?=$teacher['img_teacher']?>"  alt="...">
                         </div>
                     </div>
                     <div class="text pt-3 text-center">
