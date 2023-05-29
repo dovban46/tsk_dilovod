@@ -102,7 +102,7 @@ include_once "../../database/conf.php";
                 </div>
                 <div class="input-group mt-5 mb-5">
                     <span class="input-group-text">Інформація про викладача</span>
-                    <textarea class="form-control" name="content_teacher"><?=$teacher['content_teacher']?></textarea>
+                    <textarea class="form-control" name="content_teacher" style="height: 200px"><?=$teacher['content_teacher']?></textarea>
                 </div>
 
                 <button class="btn btn-primary" type="submit">Обновити запис</button>

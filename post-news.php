@@ -47,7 +47,7 @@ $new = get_news_by_id($news_id);
             <div class="col-lg-8 ftco-animate">
                 <h2 class="mb-3"><?=$new['title']?></h2>
                 <p>
-                    <img src="<?=$new['img'];?>" class="img-fluid" alt="...">
+                    <img src="<?=$new['img'];?>" class="img-thumbnail" alt="...">
                 </p>
                 <p class="card-text" ><?=$new['content'];?></p>
                 <a href="news.php" class="btn btn-primary">&larr; Повернутися назад</a>
@@ -59,9 +59,9 @@ $new = get_news_by_id($news_id);
                     <?php foreach ($news as $new):?>
                         <div class="block-21 mb-4 d-flex">
                             <a href="post-news.php?news_id=<?=$new['id']?>">
-                                <img class="blog-img mr-4" src="<?=$new['img'];?>" alt="...">
+                                <img class="blog-img-news mr-4 img-thumbnail" src="<?=$new['img'];?>" alt="...">
                             </a>
-                            <div class="text">
+                            <div class="text ml-4">
                                 <h3 class="heading"><a href="post-news.php?news_id=<?=$new['id']?>"><?=$new['title']?></a></h3>
                                 <div class="meta">
                                     <div><a href="post-news.php?news_id=<?=$new['id']?>"><span>Автор:</span> <?=$new['LastName'];?> <?=$new['FirstName'];?></a></div>

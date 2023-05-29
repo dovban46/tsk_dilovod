@@ -83,7 +83,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                 </div>
                 <div class="input-group mt-5">
                     <span class="input-group-text">Текст новини</span>
-                    <textarea class="form-control" name="content"></textarea>
+                    <textarea class="form-control" name="content" style="height: 200px"></textarea>
                 </div>
                 <div class="input-group mt-5">
                     <span class="input-group-text">Фото новини</span>

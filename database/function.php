@@ -41,6 +41,17 @@ function get_galerys() {
     return $galery;
 }
 
+//історія
+function get_history() {
+    global $conn;
+    $sql = "SELECT * FROM history";
+    $result = mysqli_query($conn, $sql);
+
+    $history = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $history;
+}
+
+
 //пергляд новин
 function get_news_by_id ($news_id) {
     global $conn;

@@ -94,7 +94,7 @@ include_once "../../database/conf.php";
                 </div>
                 <div class="input-group mt-5">
                     <span class="input-group-text">Текст новини</span>
-                    <textarea class="form-control" name="content"><?=$new['content']?></textarea>
+                    <textarea class="form-control" name="content" style="height: 200px"><?=$new['content']?></textarea>
                 </div>
                 <div class="input-group mt-5 mb-5">
                     <span class="input-group-text">Дата</span>

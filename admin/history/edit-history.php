@@ -11,11 +11,12 @@ endforeach;
 if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     header('location: ../login/index.php');
 }
+include_once "../../database/conf.php";
 ?>
 <!DOCTYPE html>
 <html lang="ua">
 <head>
-    <title>Адмін-панель викладачів</title>
+    <title>Адмін-панель історія</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -40,7 +41,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                 <a class="navbar-brand" href="../index.php">ЦК<span>Діловодства</span></a>
             </div>
             <div class="col-md-4 d-flex align-items-center py-4">
-                <p class="navbar-brand">Добавити викладача</p>
+                <p class="navbar-brand">Історія</p>
             </div>
         </div>
     </div>
@@ -75,34 +76,36 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
 <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col">
-            <form action="check-teacher.php" method="post" enctype="multipart/form-data">
+            <?php
+            function get_history_by_id ($history_id)
+            {
+                global $conn;
+                $sql = "SELECT * FROM history WHERE id  = " . $history_id;
+                $result = mysqli_query($conn, $sql);
+
+                $history = mysqli_fetch_assoc($result);
+                return $history;
+            }
+            $history_id = '1';
+            $history = get_history_by_id($history_id);
+            ?>
+            <form action="update-history.php" method="post" enctype="multipart/form-data">
                 <div class="input-group">
-                    <span class="input-group-text">Прізвище</span>
-                    <input type="text" name="LastName" class="form-control">
-                    <span class="input-group-text">Ім'я</span>
-                    <input type="text" name="FirstName" class="form-control">
-                    <span class="input-group-text">По батькові</span>
-                    <input type="text" name="PoBatkovi" class="form-control">
-                </div>
-                <div class="input-group mt-5">
-                    <span class="input-group-text">Посада викладача</span>
-                    <textarea class="form-control" name="position"></textarea>
-                </div>
-                <div class="input-group mt-5">
-                    <span class="input-group-text">Фото викладача</span>
-                    <input type="file" class="form-control" id="inputGroupFile04" name="image">
+                    <span class="input-group-text">ID</span>
+                    <input type="text" name="id" readonly ="readonly" class="form-control" value="<?=$history['id']?>">
                 </div>
                 <div class="input-group mt-5 mb-5">
-                    <span class="input-group-text">Інформація про викладача</span>
-                    <textarea class="form-control" name="content_teacher" style="height: 200px"></textarea>
+                    <span class="input-group-text">Текст</span>
+                    <textarea class="form-control" name="content" style="height: 1000px"><?=$history['content']?></textarea>
                 </div>
-
-                <button class="btn btn-primary" type="submit">Додати запис</button>
-                <a href="index-teacher.php" class="btn btn-primary">Скасувати</a>
+                <button class="btn btn-primary" type="submit">Обновити запис</button>
+                <a href="../index.php" class="btn btn-primary">Скасувати</a>
             </form>
         </div>
     </div>
 </div>
+
+
 
 
 <script src="../../js/jquery.min.js"></script>

@@ -22,19 +22,14 @@ include_once "include/header.php";
 </nav>
 <section class="home-slider owl-carousel">
     <div class="slider-item" style="background-image:url(images/image3.PNG);">
-        <div class="overlay"></div>
     </div>
     <div class="slider-item" style="background-image:url(images/image5.PNG);">
-        <div class="overlay"></div>
     </div>
     <div class="slider-item" style="background-image:url(images/image6.PNG);">
-        <div class="overlay"></div>
     </div>
     <div class="slider-item" style="background-image:url(images/image7.PNG);">
-        <div class="overlay"></div>
     </div>
     <div class="slider-item" style="background-image:url(images/image4.PNG);">
-        <div class="overlay"></div>
     </div>
 </section>
 

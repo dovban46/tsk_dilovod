@@ -43,9 +43,9 @@ $teacher = get_teacher_by_id($teacher_id);
     <div class="container">
         <div class="row">
             <div class="col-lg-8 ftco-animate">
-                <p>
-                    <img src="<?=$teacher['img_teacher'];?>" class="img-fluid" alt="...">
-                </p>
+                <div class="w-75 p-3">
+                    <img src="<?=$teacher['img_teacher'];?>" class="img-thumbnail" alt="...">
+                </div>
                 <h2 class="mb-3"><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></h2>
                 <p class="card-text"><?=$teacher['position'];?></p>
                 <p class="card-text" align="justify"><?=$teacher['content_teacher'];?></p>
@@ -58,7 +58,7 @@ $teacher = get_teacher_by_id($teacher_id);
                     <?php $teachers = get_teachers();?>
                     <?php foreach ($teachers as $teacher):?>
                         <div class="block-21 mb-4 d-flex">
-                                <img class="blog-img mr-4" src="<?=$teacher['img_teacher'];?>" alt="...">
+                                <img class="blog-img mr-4 img-thumbnail" src="<?=$teacher['img_teacher'];?>" alt="...">
                             <div class="text">
                                 <h3 class="heading"><a href="post-teacher.php?teacher_id=<?=$teacher['id_teacher']?>"><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></a></h3>
                             </div>

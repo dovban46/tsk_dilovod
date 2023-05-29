@@ -8229,7 +8229,7 @@ h1, h2, h3, h4, h5,
       font-size: 20px; }
 
 .ftco-navbar-light {
-  background: transparent !important;
+  background: #0d1128 !important;
   z-index: 3;
   padding: 0; }
   .ftco-navbar-light .container {
@@ -9565,8 +9565,13 @@ h1, h2, h3, h4, h5,
 
 .block-21 .blog-img {
   display: block;
-  height: 80px;
-  width: 80px; }
+  height: 100px;
+  width: 90px; }
+
+.block-21 .blog-img-news {
+  display: block;
+  height: 100px;
+  width: 120px; }
 
 .block-21 .text {
   width: calc(100% - 100px); }
@@ -9864,4 +9869,3 @@ h1, h2, h3, h4, h5,
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-

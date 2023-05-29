@@ -37,7 +37,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
             <div class="col-md-4 d-flex align-items-center py-4">
-                <a class="navbar-brand" href="index.php">ЦК<span>Діловодства</span></a>
+                <a class="navbar-brand" href="../index.php">ЦК<span>Діловодства</span></a>
             </div>
             <div class="col-md-4 d-flex align-items-center py-4">
                 <p class="navbar-brand">Адмін-панель</p>
@@ -76,7 +76,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     <section class="ftco-section bg-light">
         <div class="container-fluid px-4">
             <div class="row">
-                    <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="col-md-6 col-lg-3 ftco-animate mb-5">
                         <div class="staff">
                             <div class="img align-self-stretch">
                                 <img src="../images/teacher-admin.png"  alt="...">
@@ -89,7 +89,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                             </div>
                         </div>
                     </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="col-md-6 col-lg-3 ftco-animate mb-5">
                     <div class="staff">
                         <div class="img align-self-stretch">
                             <img src="../images/news-admin.png"  alt="...">
@@ -102,7 +102,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="col-md-6 col-lg-3 ftco-animate mb-5">
                     <div class="staff">
                         <div class="img align-self-stretch">
                             <img src="../images/student-admin.png"  alt="...">
@@ -115,7 +115,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3 ftco-animate">
+                <div class="col-md-6 col-lg-3 ftco-animate mb-5">
                     <div class="staff">
                         <div class="img align-self-stretch">
                             <img src="../images/gallery-admin.png"  alt="...">
@@ -128,6 +128,20 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-3 ftco-animate mb-5">
+                    <div class="staff">
+                        <div class="img align-self-stretch">
+                            <img src="../images/history-admin.png"  alt="...">
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>Історія</h3>
+                            <div class="faded">
+                                <a href="history/edit-history.php" class="btn btn-primary">Змінити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
