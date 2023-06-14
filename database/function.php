@@ -134,14 +134,40 @@ function get_grupa_name ($grupa_id) {
 //пергляд груп
 function get_grupa() {
     global $conn;
-    $sql = "SELECT * FROM grupa ORDER BY `year` DESC ";
+    $sql = "SELECT * FROM teachers INNER JOIN grupa ON teachers.id_teacher = grupa.curator ORDER BY `year` DESC";
     $result = mysqli_query($conn, $sql);
 
     $grup = mysqli_fetch_all($result, MYSQLI_ASSOC);
     return $grup;
 }
 
+//пергляд випускників
+function get_student() {
+    global $conn;
+    $sql = "SELECT * FROM grupa INNER JOIN students ON grupa.id_grupa = students.grupa ORDER BY `year` DESC";
+    $result = mysqli_query($conn, $sql);
 
+    $student = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $student;
+}
+
+//видалення студента
+function delete_student($student_id) {
+    global $conn;
+    $student_id = mysqli_real_escape_string($conn, $student_id);
+
+    $sql = "DELETE FROM students WHERE id_students = " .$student_id;
+    $result = mysqli_query($conn, $sql);
+}
+
+//видалення групи
+function delete_grupa($grupa_id) {
+    global $conn;
+    $grupa_id = mysqli_real_escape_string($conn, $grupa_id);
+
+    $sql = "DELETE FROM grupa WHERE id_grupa = " .$grupa_id;
+    $result = mysqli_query($conn, $sql);
+}
 
 
 

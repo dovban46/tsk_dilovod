@@ -13,9 +13,9 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
 }
 include_once "../../database/conf.php";
 
-$news_id = $_GET['news_id'];
-if (!is_numeric($news_id))
+$student_id = $_GET['student_id'];
+if (!is_numeric($student_id))
     header('location: ../404.php');
 
-$new = delete_new($news_id);
-header('location: index-grup.php');
+$student = delete_student($student_id);
+header('location: index-student.php');

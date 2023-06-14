@@ -24,6 +24,6 @@ $stmt->bindValue(":content_teacher", $_POST["content_teacher"]);
 
 
 $stmt->execute();
-header("location:index-teacher.php");
+header("location:index-student.php");
 
 

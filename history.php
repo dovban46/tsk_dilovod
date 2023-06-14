@@ -33,7 +33,7 @@ include_once "include/header.php";
     </div>
 </section>
 
-<section class="ftco-section bg-light"">
+<section class="ftco-section bg-light">
     <div class="container" align="justify">
         <?php $historys = get_history();?>
         <?php foreach ($historys as $history):?>

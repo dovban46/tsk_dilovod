@@ -110,7 +110,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         <div class="text pt-3 text-center">
                             <h3>Випусники</h3>
                             <div class="faded">
-                                <a href="#" class="btn btn-primary">Змінити</a>
+                                <a href="student/index-student.php" class="btn btn-primary">Змінити</a>
                             </div>
                         </div>
                     </div>
