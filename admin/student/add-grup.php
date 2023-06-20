@@ -37,6 +37,9 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
 <div class="bg-top navbar-light">
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
+            <div class="block-21 mt-4 mb-4 d-flex">
+                <a href="../index.php"><img class="blog-img mr-4" src="../../images/logo.png" alt=""></a>
+            </div>
             <div class="col-md-4 d-flex align-items-center py-4">
                 <a class="navbar-brand" href="../index.php">ЦК<span>Діловодства</span></a>
             </div>
@@ -81,7 +84,11 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                     <span class="input-group-text">Рік</span>
                     <input type="text" name="year" class="form-control">
                     <span class="input-group-text">Назва</span>
-                    <input type="text" name="name" class="form-control">
+                    <input type="text" name="name" class="form-control" value="Д-31">
+                </div>
+                <div class="input-group mt-5">
+                    <span class="input-group-text">Фото новини</span>
+                    <input type="file" class="form-control" id="inputGroupFile04" name="image">
                 </div>
                 <div class="input-group mt-5 mb-5">
                     <label class="input-group-text" for="inputGroupSelect01">Автор</label>

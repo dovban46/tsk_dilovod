@@ -26,20 +26,24 @@ include "database/function.php";
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
             <div class="col-md-4 d-flex align-items-center py-4">
+            <div class="block-21 mt-4 d-flex">
+                <a href="index.php"><img class="blog-img mr-4" src="images/logo.png" alt=""></a>
+            </div>
+
                 <a class="navbar-brand" href="index.php">ЦК<span>Діловодства</span></a>
             </div>
             <div class="col-lg-8 d-block">
-                <div class="row d-flex">
+                <div class="row d-flex mt-4">
                     <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                         <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                        <div class="text">
+                        <div class="text mt-4">
                             <span>Email</span>
                             <span>guscollegetntu@ukr.net</span>
                         </div>
                     </div>
                     <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
                         <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                        <div class="text">
+                        <div class="text mt-4">
                             <span>Телефон</span>
                             <span>(03557) 22039</span>
                         </div>

@@ -5,7 +5,7 @@ $years = $_GET['grupa_id'];
 if (!is_numeric($years))
     header('404.php');
 
-$year = get_grupa_name($years);
+$info_grup = get_grupa_name($years);
 
 ?>
 <link rel="stylesheet" href="css/list.css">
@@ -34,8 +34,8 @@ $year = get_grupa_name($years);
     <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
             <div class="col-md-9 ftco-animate text-center">
-                <h1 class="mb-2 bread">Випускники <?=$year['year'];?></h1>
-                <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Головна <i class="ion-ios-arrow-forward"></i></a></span> <span>Випускники <i class="ion-ios-arrow-forward"> <?=$year['year'];?></i></span></p>
+                <h1 class="mb-2 bread">Випускники <?=$info_grup['year'];?></h1>
+                <p class="breadcrumbs"><span class="mr-2"><a href="index.php">Головна <i class="ion-ios-arrow-forward"></i></a></span> <span>Випускники <i class="ion-ios-arrow-forward"> <?=$info_grup['year'];?></i></span></p>
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@ $year = get_grupa_name($years);
             <?php $grupa = get_grupa();?>
             <?php foreach ($grupa as $grup):?>
                 <div class="d-flex justify-content-center text-center">
-                    <div class="px-3 mb-3">
+                    <div class="px-3 mb-5">
                     <p><a href="post-student.php?grupa_id=<?=$grup['id_grupa'];?>" class="btn btn-primary with-btn"><?=$grup['year'];?></span></a></p>
                 </div>
             </div>
@@ -59,8 +59,13 @@ $year = get_grupa_name($years);
             $grupa_id= $_GET['grupa_id']
             ?>
 
+
             <div class="container-fluid px-4">
                 <div class="row justify-content-center mb-5 pb-2">
+                    <div class="row justify-content-center align-items-center">
+                        <img class="img-thumbnail w-75 mb-3" src="<?=$info_grup['img'];?>" alt="...">
+                    </div>
+
                     <div class="col-md-8 text-center heading-section ftco-animate">
                         <?php
                         $sql = "SELECT t.LastName AS teachers_LastName, t.FirstName AS teachers_FirstName, t.PoBatkovi AS teachers_PoBatkovi

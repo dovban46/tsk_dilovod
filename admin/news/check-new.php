@@ -22,6 +22,6 @@ $stmt->bindValue(":date", $_POST["date"]);
 $stmt->bindValue(":avtor", $_POST["avtor"]);
 
 $stmt->execute();
-header("location:index-grup.php");
+header("location:index-new.php");
 
 

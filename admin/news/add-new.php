@@ -37,6 +37,9 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
 <div class="bg-top navbar-light">
     <div class="container">
         <div class="row no-gutters d-flex align-items-center align-items-stretch">
+            <div class="block-21 mt-4 mb-4 d-flex">
+                <a href="../index.php"><img class="blog-img mr-4" src="../../images/logo.png" alt=""></a>
+            </div>
             <div class="col-md-4 d-flex align-items-center py-4">
                 <a class="navbar-brand" href="../index.php">ЦК<span>Діловодства</span></a>
             </div>

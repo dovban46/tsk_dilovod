@@ -34,7 +34,7 @@ include_once "include/header.php";
 </section>
 
 
-<section class="ftco-section bg-light"">
+<section class="ftco-section bg-light">
     <div class="container">
         <div class="row">
 

@@ -18,4 +18,4 @@ if (!is_numeric($news_id))
     header('location: ../404.php');
 
 $new = delete_new($news_id);
-header('location: index-grup.php');
+header('location: index-new.php');

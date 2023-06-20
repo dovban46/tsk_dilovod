@@ -18,4 +18,4 @@ if (!is_numeric($teacher_id))
     header('location: ../404.php');
 
 $teacher = delete_teacher($teacher_id);
-header('location: index-student.php');
+header('location: index-teacher.php');

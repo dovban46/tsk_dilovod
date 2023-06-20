@@ -35,6 +35,18 @@ include_once "include/header.php";
     </div>
 </section>
 
+
+<section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <iframe class="mb-5" src="https://drive.google.com/file/d/1c9ffLuFgzUqyfumko73VWry6k7J8lwdg/preview" width="700" height="400" allow="autoplay" ></iframe>
+            <iframe class="mb-5" src="https://drive.google.com/file/d/1MwKm8t5zAKXe_1mI49aEdIAb7LVwEo_R/preview" width="700" height="400" allow="autoplay"></iframe>
+            <iframe class="mb-5" src="https://drive.google.com/file/d/1MrIRYFnlDL3zSG3KtnWkxPjg1q7ETRH8/preview" width="700" height="400" allow="autoplay"></iframe>
+        </div>
+    </div>
+</section>
+
+
 <?php
 include_once "include/footer.php";
 ?>
