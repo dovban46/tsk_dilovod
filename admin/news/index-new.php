@@ -84,6 +84,7 @@ include "../../database/conf.php";
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Заголовок</th>
+                    <th scope="col">Автор</th>
                     <th><a href="add-new.php" class="btn btn-success">Добавити</a></th>
                     <th><a href="../index.php" class="btn btn-primary">Назад</a></th>
                 </tr>
@@ -94,6 +95,7 @@ include "../../database/conf.php";
                     <tr>
                         <th scope="row"><?=$new['id'];?></th>
                         <td><?=$new['title'];?></td>
+                        <td><?=$new['LastName'];?> <?=$new['FirstName']?></td>
                         <td><a href="edit-new.php?news_id=<?=$new['id']?>" class="btn btn-info">Редагувати</a></td>
                         <td><a href="delete-new.php?news_id=<?=$new['id']?>" class="btn btn-danger">Видалити</a></td>
                     </tr>

@@ -52,6 +52,17 @@ function get_history() {
 }
 
 
+//виховні
+function get_educational() {
+    global $conn;
+    $sql = "SELECT * FROM educational";
+    $result = mysqli_query($conn, $sql);
+
+    $educational = mysqli_fetch_all($result, MYSQLI_ASSOC);
+    return $educational;
+}
+
+
 //пергляд новин
 function get_news_by_id ($news_id) {
     global $conn;

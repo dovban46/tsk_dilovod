@@ -11,6 +11,23 @@ endforeach;
 if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     header('location: ../../login/index.php');
 }
+
+function has_teacher($teacher_id) {
+    global $conn;
+
+    $sql = "SELECT 
+                (SELECT COUNT(*) FROM grupa WHERE curator = " . $teacher_id . ") AS students_count,
+                (SELECT COUNT(*) FROM news WHERE avtor = " . $teacher_id . ") AS news_count";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+
+    $students_count = $row['students_count'];
+    $news_count = $row['news_count'];
+
+    return $students_count > 0 || $news_count > 0;
+}
+
+
 include "../../database/conf.php";
 
 ?>
@@ -96,7 +113,13 @@ include "../../database/conf.php";
                         <th scope="row"><?=$teacher['id_teacher'];?></th>
                         <td><?=$teacher['LastName']?> <?=$teacher['FirstName']?> <?=$teacher['PoBatkovi']?></td>
                         <td><a href="edit-teacher.php?teacher_id=<?=$teacher['id_teacher']?>" class="btn btn-info">Редагувати</a></td>
-                        <td><a href="delete-teacher.php?teacher_id=<?=$teacher['id_teacher']?>" class="btn btn-danger">Видалити</a></td>
+                        <td>
+                            <?php if (has_teacher($teacher['id_teacher'])): ?>
+                                <span class="text-danger">Неможливо видалити. Викладач є автором новин або куратором групи. <br>Спершу видалить запис з цим викладачем</span>
+                            <?php else: ?>
+                                <a href="delete-teacher.php?teacher_id=<?=$teacher['id_teacher']?>" class="btn btn-danger">Видалити</a>
+                            <?php endif; ?>
+                        </td>
                     </tr>
                     </tbody>
                 <?php endforeach;?>

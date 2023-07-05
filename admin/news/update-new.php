@@ -20,4 +20,4 @@ $stmt->bindValue(":date", $_POST["date"]);
 
 
 $stmt->execute();
-header("location:index-grup.php");
+header("location:index-new.php");

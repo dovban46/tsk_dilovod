@@ -94,8 +94,7 @@ include_once "../../database/conf.php";
             ?>
             <form action="update-history.php" method="post" enctype="multipart/form-data">
                 <div class="input-group">
-                    <span class="input-group-text">ID</span>
-                    <input type="text" name="id" readonly ="readonly" class="form-control" value="<?=$history['id']?>">
+                    <input type="hidden" name="id" readonly ="readonly" class="form-control" value="<?=$history['id']?>">
                 </div>
                 <div class="input-group mt-5 mb-5">
                     <span class="input-group-text">Текст</span>

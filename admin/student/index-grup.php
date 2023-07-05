@@ -11,6 +11,17 @@ endforeach;
 if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
     header('location: ../login/index.php');
 }
+
+function has_students($grup_id) {
+    global $conn;
+
+    $sql = "SELECT COUNT(*) FROM students WHERE grupa = " . $grup_id;
+    $result = mysqli_query($conn, $sql);
+    $count = mysqli_fetch_row($result)[0];
+
+    return $count > 0;
+}
+
 include "../../database/conf.php";
 ?>
 <!DOCTYPE html>
@@ -97,7 +108,13 @@ include "../../database/conf.php";
                         <td><?=$grup['year'];?></td>
                         <th><?=$grup['LastName'];?> <?=$grup['FirstName'];?></th>
                         <th></th>
-                        <td><a href="delete-grup.php?grup_id=<?=$grup['id_grupa']?>" class="btn btn-danger">Видалити</a></td>
+                        <td>
+                            <?php if (has_students($grup['id_grupa'])): ?>
+                                <span class="text-danger">Неможливо видалити. Група містить студентів. <br>Спершу видалить студентів групи</span>
+                            <?php else: ?>
+                                <a href="delete-grup.php?grup_id=<?=$grup['id_grupa']?>" class="btn btn-danger">Видалити</a>
+                            <?php endif; ?>
+                        </td>
                     </tr>
                     </tbody>
                 <?php endforeach;?>

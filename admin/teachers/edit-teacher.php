@@ -88,8 +88,7 @@ include_once "../../database/conf.php";
             ?>
             <form action="update-teacher.php" method="post" enctype="multipart/form-data">
                 <div class="input-group">
-                    <span class="input-group-text">ID</span>
-                    <input type="text" name="id_teacher" readonly ="readonly" class="form-control" value="<?=$teacher['id_teacher']?>">
+                    <input type="hidden" name="id_teacher" readonly ="readonly" class="form-control" value="<?=$teacher['id_teacher']?>">
                 </div>
                 <div class="input-group mt-5">
                     <span class="input-group-text">Прізвище</span>

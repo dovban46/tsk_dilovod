@@ -64,7 +64,7 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="nav-item dropdown-item" href="../nav-plan.php" class="nav-link">Навчальний план</a></li>
                         <li><a class="nav-item dropdown-item" href="../kursovi.php" class="nav-link">Курсові роботи</a></li>
-                        <li><a class="nav-item dropdown-item" href="../ educational.php" class="nav-link">Виховні</a></li>
+                        <li><a class="nav-item dropdown-item" href="../educational.php" class="nav-link">Виховні</a></li>
                     </ul>
                 </div>
                 <li class="nav-item"><a href="../post-student.php?grupa_id=1" class="nav-link">Випускники</a></li>
@@ -118,6 +118,19 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-3 ftco-animate mb-5 ">
+                    <div class="staff">
+                        <div class="img align-self-stretch" style="height: 80px">
+                            <img src="../images/educational-admin.png"  alt="...">
+                        </div>
+                        <div class="text pt-3 text-center">
+                            <h3>Виховні</h3>
+                            <div class="faded">
+                                <a href="educational/edit-educational.php" class="btn btn-primary">Змінити</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-6 col-lg-3 ftco-animate mb-5">
                     <div class="staff">
                         <div class="img align-self-stretch">
@@ -144,6 +157,8 @@ if ($_SESSION['login'] !== $login && $_SESSION['password'] !==$password){
                         </div>
                     </div>
                 </div>
+
+
 
             </div>
         </div>

@@ -88,8 +88,7 @@ include_once "../../database/conf.php";
             ?>
             <form action="update-new.php" method="post" enctype="multipart/form-data">
                 <div class="input-group">
-                    <span class="input-group-text">ID</span>
-                    <input type="text" name="id" readonly ="readonly" class="form-control" value="<?=$new['id']?>">
+                    <input type="hidden" name="id" readonly ="readonly" class="form-control" value="<?=$new['id']?>">
                 </div>
                 <div class="input-group mt-5    ">
                     <span class="input-group-text">Заголовок</span>
